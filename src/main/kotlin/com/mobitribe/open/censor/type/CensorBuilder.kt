@@ -11,7 +11,7 @@ object CensorBuilder {
     fun getCensoredText(text: String): String {
         var textNeedsToBeCensored = text
         censors.forEach {
-            textNeedsToBeCensored = it.getCensoredText(text)
+            textNeedsToBeCensored = it.getCensoredText(textNeedsToBeCensored)
         }
         return textNeedsToBeCensored
     }

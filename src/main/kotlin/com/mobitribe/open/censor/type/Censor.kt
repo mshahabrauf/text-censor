@@ -1,7 +1,5 @@
 package com.mobitribe.open.censor.type
 
-import java.util.regex.Pattern
-
 abstract class Censor {
 
     protected var placeHolder: String = "[placeholder]"
